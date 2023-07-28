@@ -59,7 +59,7 @@ public class Nodo {
     
     public void invertir(Nodo L){
         Nodo P = L;
-        Nodo aux;
+        Nodo aux, R;
         Nodo Q = TIERRA;
             while(P!= Nodo.TIERRA){
                 aux = new Nodo();
@@ -68,8 +68,12 @@ public class Nodo {
                 Q = aux;
                 P=P.link();
             }
-        L=Q;
-        System.out.println(L);
+        R=Q;
+        while(R!=Nodo.TIERRA){
+            System.out.print(R.data()+" ,");
+            R = R.link();
+        }
+        System.out.println("");
     }
     
     public void addFinal (Nodo L, int x){       
@@ -80,8 +84,10 @@ public class Nodo {
         }
         aux= new Nodo();
         aux.ponerData(x);
-        P.ponerLink(aux);
         aux.ponerLink(TIERRA);
+        P.ponerLink(aux);
     }
+    
+    
     
 }

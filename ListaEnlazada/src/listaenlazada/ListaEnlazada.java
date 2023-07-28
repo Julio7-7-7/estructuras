@@ -6,8 +6,9 @@ public class ListaEnlazada {
 
     public static void main(String[] args) {
         
-        /*
+        
         //Simple impresión
+        
         Nodo L,P,Q;
         
         L = new Nodo();
@@ -29,7 +30,14 @@ public class ListaEnlazada {
             R = R.link();
         }
         System.out.println("");
-        */
+        
+        Nodo I = new Nodo();
+        I.invertir(L);
+        
+        
+        
+        
+        
         
         //Mostrar y cargar nodo
         /*
@@ -53,11 +61,19 @@ public class ListaEnlazada {
             R = R.link();
         }
         System.out.println("");
-        */
-       
         
+        Nodo I = new Nodo();
+        I.invertir(L);
+        */
+        
+        
+        
+        
+       //Cargar y mostrar la lista ordenada
        /*
-       Nodo L=new Nodo(), Aux, Ult=new Nodo();
+       Nodo L=new Nodo();
+       Nodo Aux= new Nodo();
+       Nodo Ult=new Nodo();
        int n;
        int val;
        n = Integer.parseInt(JOptionPane.showInputDialog("Ingrese N: "));
@@ -79,15 +95,7 @@ public class ListaEnlazada {
         }
         System.out.println("");
         */
-        
-        Nodo q = new Nodo();
-        q.ponerData(1);
-        q.ponerData(2);
-        q.ponerData(3);
-        q.ponerData(4);
-        q.ponerData(5);
-        
-        
+       
         
     }    
     
