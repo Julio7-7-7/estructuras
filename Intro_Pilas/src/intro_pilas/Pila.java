@@ -10,13 +10,11 @@ public class Pila {
         cima=0;
     }
     
-    //metodo insertar
     public void insertar(int dato){
         vectorPila[cima] = dato;
         cima++;
     }
     
-    //metodo eliminar
     public int eliminar(){
         int eliminar = 0;
         if(cima==0){
