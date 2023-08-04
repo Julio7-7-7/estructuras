@@ -33,12 +33,12 @@ public class Cinta {
     }
 
     public String ultimos5Caracteres() {
-        StringBuilder sb = new StringBuilder();
-        int startIndex = Math.max(0, dim - 4);
-        for (int j = startIndex; j <= dim; j++) {
-            sb.append(V[j]);
+        StringBuilder cr = new StringBuilder();
+        int start = Math.max(0, dim - 4);
+        for (int j = start; j <= dim; j++) {
+            cr.append(V[j]);
         }
-        return sb.toString();
+        return cr.toString();
     }
 
     public char caracterSolitario() {
@@ -49,7 +49,6 @@ public class Cinta {
         if (i > dim) {
             reiniciarCinta();
         }
-
         caracterSolitario = V[i]; // Actualizar el carácter solitario antes del giro
 
         for (int k = 0; k < dim; k++) {
@@ -69,20 +68,22 @@ public class Cinta {
         }
     }
     return false;
-}
+    }
 
+   
     public void reiniciarCinta() {
         for (int k = 0; k <= dim; k++)
             V[k] = generarCaracterPermitido();
         i = 0;
     }
+    
 
     public boolean FinCinta() {
         return i > dim;
     }
 
     public void imprimirCaracterSolitario() {
-        System.out.println("Caracter al azar: " + caracterSolitario);
+        System.out.println("Su caracter al azar es: " + caracterSolitario);
     }
 }
 

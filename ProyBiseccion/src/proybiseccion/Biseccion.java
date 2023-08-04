@@ -1,5 +1,14 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package proybiseccion;
 
+/**
+ *
+ * @author Usuario
+ */
 public class Biseccion {
     
     private double xl;
@@ -30,7 +39,8 @@ public class Biseccion {
     private double funcion(double x){
        // return (-0.6*Math.pow(x,2)+2.4*x+5.5);
        //return  Math.pow(x, 3)+4*Math.pow(x,2)-10;
-       return Math.log(Math.pow(x, 2)+1)-Math.exp(x/2)*Math.cos(Math.PI*x);
+       //return Math.log(Math.pow(x, 2)+1)-Math.exp(x/2)*Math.cos(Math.PI*x);
+       return Math.exp(x)+Math.pow(2, -x)+2*Math.cos(x-6);
     }
     
     public void biseccion(int cantIter){
